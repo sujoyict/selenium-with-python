@@ -2,6 +2,7 @@ from selenium import webdriver
 from selenium.webdriver import ActionChains
 from selenium.webdriver.common.keys import Keys
 from selenium.webdriver.common.by import By
+from selenium.webdriver.support.select import Select
 from selenium.webdriver.support.ui import WebDriverWait
 from selenium.webdriver.support import expected_conditions as EC
 #from webdriver_manager.chrome import ChromeDriverManager
@@ -27,6 +28,7 @@ time.sleep(5)
 driver.find_element_by_xpath('//button[@class="flex items-center"]').click()
 
 driver.find_element_by_xpath("//body/div[@id='custom-popover']/div[1]/div[1]/div[1]/form[1]/div[3]/button[1]").click()
+
 
 
 #elem = driver.find_element_by_class_name("currentColor")
